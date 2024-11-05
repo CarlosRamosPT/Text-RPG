@@ -53,7 +53,7 @@ addEventListenerToButton('yes', 'click', () => {
       state = 'adventureStarts'
       return adventureStarts()
     case 'fightQuestion':
-      setTimeout(() => {displayScreen.value = ("Start fight")},250)
+      setTimeout(() => {displayScreen.value = ("Start fight")},500)
       return currentFight()
     case 'quit':
         displayScreen.value = ("ok Thank you for playing.")
@@ -104,7 +104,7 @@ function adventureStarts() {
 function start() {
   if(!characterName){
     setTimeout(() => {displayScreen.value = ("You need to get a character name first!")},500)
-    setTimeout(() => {charName()},1000);
+    setTimeout(() => {charName()},500);
   } else {
     setTimeout(() => {displayScreen.value = (`Hello how are you? \n ${characterName} you ready for an aventure today?`)},3000)
   adventureStarts();
@@ -123,8 +123,8 @@ function quit() {
 
 // Set the charName for the player
 function charName() {
-  setTimeout(() => {characterName = prompt("What is your character name?", "john Doe")}, 1000);
-  setTimeout(() => {displayScreen.value = `Are you sure you want to keep this name? (${characterName})`},3000);
+  setTimeout(() => {characterName = prompt("What is your character name?", "john Doe")}, 500);
+  setTimeout(() => {displayScreen.value = `Are you sure you want to keep this name? (${characterName})`},1000);
   state = "charName" // Set current game status
 };
 
