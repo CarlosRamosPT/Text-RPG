@@ -39,29 +39,29 @@ export function currentFight() {
     const current_attack = Math.floor(Math.random() * 4);
     if (current_attack == 3) {
       monsterFoundHp -= 3;
-      setTimeout(() => {displayScreen.value = ("You have greatly damaged the enemy")},500);
-      setTimeout(() => {displayScreen.value += (`Your current enemy health is ${monsterFoundHp}`)},500);
+      setTimeout(() => {displayScreen.value = ("You have greatly damaged the enemy")},1000);
+      setTimeout(() => {displayScreen.value += (`Your current enemy health is ${monsterFoundHp}`)},1000);
     } else if (current_attack == 2) {
       monsterFoundHp -= 2;
       setTimeout(() => {displayScreen.value = (
         "You did a moderate damage to the enemy although it was not your greatest impact!"
       );
-      displayScreen.value += (`Your current enemy health is ${monsterFoundHp}`)},500);
+      displayScreen.value += (`Your current enemy health is ${monsterFoundHp}`)},1000);
     } else if (current_attack == 1) {
       monsterFoundHp -= 1;
       setTimeout(() => {displayScreen.value = (
         "You barely scrapped the enemy!" +
           "\n Come on you can do better than that"
       );
-      displayScreen.value += (`Your current enemy health is ${monsterFoundHp}`)},500);
+      displayScreen.value += (`Your current enemy health is ${monsterFoundHp}`)},1000);
     } else {
       monsterFoundHp -= 0;
       setTimeout(() => {displayScreen.value = (
         "You don't do nothing to the enemy it stands laughing at you."
       );
-      displayScreen.value += (`Your current enemy health is ${monsterFoundHp}`)},500);
+      displayScreen.value += (`Your current enemy health is ${monsterFoundHp}`)},1000);
     }
     // break;
   }
-  setTimeout(() => {displayScreen.value = (message)},3000);
+  setTimeout(() => {displayScreen.value = (message)},4000);
 };
