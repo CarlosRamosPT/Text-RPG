@@ -1,0 +1,210 @@
+/* imported area */
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
+
+:root {
+    font-size: 18px;
+    font-family: "Sixtyfour Convergence", sans-serif;
+}
+
+
+/* Body starts here */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 60%, 2%); 
+    overflow: hidden;
+}
+
+#game-container {
+    position: relative;
+    padding: 20px;
+    width:700px;
+    height: 400px;
+    border: 2px green solid;
+    border-radius: 10px 10px 5px 5px ;
+    background: linear-gradient(to bottom right, #0066cc 0%, #800000 100%);
+    top:150px;
+    left: 200px;
+}
+
+#displayOff {
+    margin-top: -8px;
+    margin-left: -5px;
+    border-radius: 10px 10px 5px 5px ;
+    width:100%;
+    height: 250px;
+    background-color: #011818; 
+    color: darkgreen;
+}
+
+#display {
+    position:absolute;
+     margin-top: 10px;
+    margin-left: 13px;
+    border-radius: 10px 10px 5px 5px ;
+    width:90%;
+    height: 220px;  
+    background-color: #5d9090;
+    box-shadow:0 0 20px 4px green;
+    color: darkgreen;
+    visibility: hidden;
+}
+
+#buttons {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background:linear-gradient(to top left, #0066cc 0%, #800000 100%);
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    
+}
+
+/* Buttons */
+#start {
+    position:absolute;
+    top: 20px;
+    font-size: 1rem;
+    width: 100px;
+    height: 50px;
+    border:3px solid black;
+}
+
+#yes {
+    position:absolute;
+    left: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#no {
+    position:absolute;
+    right: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#sound {
+    position: absolute;
+    top: 70%;
+    left: 36%;
+    font-size: 0.5rem;
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+
+}
+
+#power {
+    position: absolute;
+    top: 70%;
+    right: 36%;
+    font-size: 0.5rem;
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+}
+
+/* speakers visual */
+.speaker {
+    background-color: rgb(15, 5, 5);
+    border: 3px solid black;
+    width: 5px;
+    height: 5px;
+    border-radius: 100px;
+}
+
+#spk1 {
+    position: absolute;
+    top:100px;
+    left: 180px;
+}
+
+#spk2 {
+    position: absolute;
+    top:80px;
+    left: 200px;
+}
+
+#spk3 {
+    position: absolute;
+    top:100px;
+    left: 220px;
+}
+
+
+#spk4 {
+    position: absolute;
+    top:100px;
+    right: 200px;
+}
+
+#spk5 {
+    position: absolute;
+    top:80px;
+    right: 220px;
+}
+
+#spk6 {
+    position: absolute;
+    top:100px;
+    right: 240px;
+}
+
+#spk7 {
+    position: absolute;
+    left: 45%;
+    top: 80px;
+}
+
+#spk8 {
+        position: absolute;
+        left: 49%;
+        top: 80px;
+}
+
+#spk9 {
+        position: absolute;
+        left: 53%;
+        top: 80px;
+}
+
+
+/* buttons active */
+#yes:active, #no:active {
+    box-shadow: 0 0 2px 2px inset;
+    font-size: 1.8rem;
+}
+
+#sound:active, #power:active {
+    box-shadow: 0 0 2px 2px inset;
+    font-size: 0.4rem;
+}
+
+#start:active {
+    box-shadow: 0 0 2px 2px inset;
+    font-size: 0.8rem;
+}
+
+.fa-power-off {
+    font-size: 28px;
+    color: red;
+}
+
+.fa-power-off:active {
+    font-size: 24px;
+}
