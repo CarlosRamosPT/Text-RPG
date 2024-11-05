@@ -90,7 +90,7 @@ let state;
 
 // Start the adventure, sets div text and set game state
 function adventureStarts() {
-  monsterFound()
+  monsterFound;
   // displayScreen.value =  `You have encountered a ${monsterFound.name} with ${monsterFound.hp} HP!`
   setTimeout(() => {displayScreen.value = (`You have encountered a ${monsterFound.name} with ${monsterFound.hp} HP! `)}, 3000)
 
